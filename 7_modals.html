@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Buttons</title>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+    .grey{
+        background-color: #000;
+        padding: 20px;
+
+   }
+
+    </style>
+  </head>
+  <body>
+      <header>
+          <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand">WiredWiki</a>
+               </div>
+
+               <div class="collapse navbar-collapse" id="example">
+                 <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                 </ul>
+                 <a href="#" class="btn btn-primary navbar-btn">Anchor</a> 
+                 <form action="" class="navbar-form navbar-right" role="search">
+                   <div class="form-group">
+                     <input type="text" class="form-control" placeholder="search this out">
+                   </div>
+                   <button type="button " class="btn btn-primary">Submit</button>
+                 </form>
+               </div>
+
+            </div>
+          </div>
+          <div class="jumbotron">
+            <div class="container">
+              <h1>Hello World</h1>
+              <h3>Modals in Bootstrap</h3>
+            </div>
+          </div>
+      </header>
+
+        
+        <!-- Simple Modal -->
+        <div class="container-fluid">
+            <h3>Modal Dialog with form</h3>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-1">
+           Activate the modal</button>
+           <div class="modal fade" id="modal-1">
+             <div class="modal-dialog modal-md">
+               <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">This is the heading</h3>
+                  </div>
+                  <div class="modal-body">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</div>
+                  <div class="modal-footer">
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">Download</a>
+                  </div>
+               </div>
+             </div>
+           </div>
+          <hr>
+        </div>
+          
+        <!-- Modal with form in it -->
+        
+        <div class="container">
+        <h3>Modal Dialog with form</h3>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-2">Modal with form</button>
+
+          <div class="modal fade" id="modal-2">
+               <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+
+                     <div class="modal-header">
+                        <button class="close" type="button" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"> Form in a modal</h4>
+                     </div>
+
+                     <div class="modal-body">
+                       <form class="form-horizontal" role="form">
+                          
+                          <div class="form-group">
+                             <label for="email" class="col-xs-12 col-md-3 control-label">Email:</label>
+                             <div class="col-xs-12 col-md-6">
+                                <input id="email" class="form-control" type="email" placeholder="email:">
+                             </div>
+                          </div>
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"> Submit </button>
+                       </form>
+                     </div>
+                     
+                     <div class="modal-footer">
+                    
+                        <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+                     </div>
+
+                  </div>
+               </div>
+          </div>
+        </div>
+
+
+      <footer>
+          <div class="container">
+          <hr>
+          <div class="row">
+            <div class="col-xs-2 col-xs-offset-10">
+                <span><small><a href="www.facebook.com">Facebook</a></small></span>
+                <span><small><a href="www.twitter.com">Twitter</a></small></span>
+                <span><small><a href="www.youtube.com">Youtube</a></small></span>
+            </div>
+          </div>
+         </div>
+      </footer>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

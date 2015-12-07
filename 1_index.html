@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+    .grey{
+        background-color: #000;
+        padding: 20px;
+
+       }
+
+    </style>
+  </head>
+  <body>
+       <header>
+          <div class="jumbotron">
+            <div class="container">
+              <h1>Hello World</h1>
+              <h3>Grid System in Bootstrap</h3>
+            </div>
+          </div>
+      </header>
+      <!-- Container -->
+
+     <div class="grey"> 
+       <div class="container">
+         <div class="well">
+             This is a container ...
+         </div>
+       </div>
+     </div>
+
+     <!-- row and column-->
+     
+    <div class="container">
+       <div class="row"> 
+        <div class=" col-xs-6 ">
+           <div class="well">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+         </div>
+         </div>
+        </div>
+
+
+       <div class="row">
+        <div class=" col-md-6">
+         <div class="well">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+         </div>
+          </div>
+       </div>
+       <div class="row"> 
+          <div class=" col-xs-3 ">
+           <div class="well">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+         </div>
+         </div>
+        </div>
+
+        
+    </div>
+  
+
+    <!-- column with clearfix-->
+    <div class="container">
+      <div class="row">
+    
+        <div class="col-xs-6  col-md-6">
+           <div class="well">
+             First Column.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et semper nisl, eget suscipit tellus.
+           </div>
+             
+        </div>
+      
+        <div class="col-xs-6   col-md-2">
+            <div class="well">
+                second column
+            </div>
+        </div>
+      
+        <div class="clearfix hidden-md hidden-lg"></div>
+        <div class="col-xs-6   col-md-2">
+             <div class="well">
+                Third column 
+            </div>
+        </div>
+        <div class="col-xs-6   col-md-2">
+              <div class="well">
+                fourth column 
+            </div>
+        </div>
+
+      </div>  
+    </div>
+ 
+  <!-- Multiple rows in a column (or) Nested Columns -->
+  <div class="container">
+     <div class="row">
+       
+        <div class="col-xs-12 col-md-6  col-md-push-6">
+
+           <div class="row " >
+              <div class="col-xs-6 col-md-4  ">
+                 <div class="well"> 1st col</div>
+              </div>
+              <div class=" col-xs-6 col-md-4 ">
+                <div class="well"> 2nd col</div>
+                
+              </div>
+           </div>
+
+           <div class="row">
+              <div class="col-xs-6 col-md-4">
+                 <div class="well"> 3rd col</div>
+              </div>
+              <div class="col-xs-6 col-md-4 ">
+                <div class="well"> 4th col</div>
+                
+              </div>
+
+          </div>
+
+          <div class="row">
+              <div class="col-xs-6 col-md-4" >
+                 <div class="well">  5th col</div>
+              </div>
+              <div class="col-xs-6 col-md-4">
+                <div class="well"> 6th col</div>
+                
+              </div>
+           </div>
+        </div>
+           <div class="col-xs-12   col-md-6 col-md-pull-6">
+          <div class="well">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et semper nisl, eget suscipit tellus. Cras imperdiet nibh quis nunc maximus tincidunt. Aenean felis risus, sodales quis lorem et, cursus laoreet quam. Nam in varius urna. Praesent euismod ipsum non nibh condimentum, sit amet posuere enim efficitur. Nam auctor, risus a tincidunt accumsan, massa enim commodo sapien, in consectetur ipsum lectus vitae sem.
+          </div>
+        </div>
+        </div>
+     </div>
+
+     <!-- Adding class "well"/"grey" after col class -->
+     <div class="container">
+        <div class="row">
+
+           <div class="col-md-6">
+               <div class="well">First column</div>
+            </div>   
+        
+            <div class="col-md-3">
+               <div class="grey">Second column</div>
+           </div>
+
+        </div>
+     </div>
+  
+   <footer>
+          <div class="container">
+          <hr>
+          <div class="row">
+            <div class="col-xs-2 col-xs-offset-10">
+                <span><small><a href="www.facebook.com">Facebook</a></small></span>
+                <span><small><a href="www.twitter.com">Twitter</a></small></span>
+                <span><small><a href="www.youtube.com">Youtube</a></small></span>
+            </div>
+          </div>
+         </div>
+      </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
