@@ -5,167 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap Buttons</title>
+    <title>Bootstrap List Group and Panel</title>
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.min.js"></script>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-
     <style type="text/css">
-    .grey{
+      .grey {
         background-color: #000;
         padding: 20px;
-
-   }
-
+      }
     </style>
   </head>
   <body>
-      <header>
-          <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
-            <div class="container">
-
-               <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a href="#" class="navbar-brand">WiredWiki</a>
-               </div>
-
-               <div class="collapse navbar-collapse" id="example">
-                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link1</a></li>
-                    <li><a href="#">Link2</a></li>
-                 </ul>
-                 <a href="#" class="btn btn-primary navbar-btn">Anchor</a> 
-                 <form action="" class="navbar-form navbar-right" role="search">
-                   <div class="form-group">
-                     <input type="text" class="form-control" placeholder="search this out">
-                   </div>
-                   <button type="button " class="btn btn-primary">Submit</button>
-                 </form>
-               </div>
-
-            </div>
-          </div>
-          <div class="jumbotron">
-            <div class="container">
-              <h1>Hello World</h1>
-              <h3>List Groups and panels in Bootstrap</h3>
-            </div>
-          </div>
-      </header>
-
-      <!-- list Group -->
-
-       <div class="container">
-          <ul class="list-group">
-            <li class="list-group-item"> This is the first content<span class="badge">1</span></li>
-            <li class="list-group-item"> This is the second content<span class="badge">2</span></li>
-            <li class="list-group-item"> This is the third content<span class="badge">3</span></li>
-             <li class="list-group-item"> This is the fourth content<span class="badge">4</span></li>
-          </ul>
-       </div>
-       <hr>
-        <!-- list Group with anchor tags -->
-
-       <div class="container">
-          <ul class="list-group">
-            <a href="#" class="list-group-item"> This is the first anchor list<span class="badge">1</span></a>
-            <a href="#" class="list-group-item"> This is the second anchor list<span class="badge">1</span></a>
-            <a href="#" class="list-group-item"> This is the third anchor list<span class="badge">1</span></a>
-            <a href="#" class="list-group-item"> This is the fourth anchor list<span class="badge">1</span></a>
-
-          </ul>
-       </div>
-
-        <hr>
-        <!-- list Group with anchor tags with highlighting effects -->
-
-       <div class="container">
-          <ul class="list-group">
-            <a href="#" class="list-group-item list-group-item-success"> This is the first anchor list<span class="badge">1</span></a>
-            <a href="#" class="list-group-item list-group-item-warning"> This is the second anchor list<span class="badge">1</span></a>
-            <a href="#" class="list-group-item list-group-item-info"> This is the third anchor list<span class="badge">1</span></a>
-            <a href="#" class="list-group-item list-group-item-danger"> This is the fourth anchor list<span class="badge">1</span></a>
-
-          </ul>
-       </div>
-
-      <hr>
- 
-        <!-- list Group with anchor tags with heading and para-->
-
-       <div class="container">
-          <ul class="list-group">
-            <a href="#" class="list-group-item list-group-item-success active"> 
-               <h3>active Heading 1</h3>
-               <p>This is active para1 </p>
-            </a>
-            <a href="#" class="list-group-item list-group-item-warning"> 
-               <h3>Heading 2</h3>
-               <p>This is para 2 </p>
-            </a>
-            <a href="#" class="list-group-item list-group-item-info"> 
-               <h3>Heading 3</h3>
-               <p>This is para 3 </p>
-            </a>
-            <a href="#" class="list-group-item list-group-item-danger">  
-               <h3>Heading 4</h3>
-               <p>This is para 4 </p>
-            </a>
-
-          </ul>
-       </div>
-       
-     <!-- Panel with Table -->
-       <div class="container">
-          <div class="panel panel-default panel-info">
-            <div class="panel-heading"><h3 class="panel-title">This is the heading of the panel</h3></div>
-            <div class="panel-body">This is the body of the panel</div>
-            <table class="table">
-                <tr><th>Heading1</th><th>Heading2</th><th>Heading3</th></tr>
-                <tr><td>content</td><td>content</td><td>content</td></tr>
-                <tr><td>content</td><td>content</td><td>content</td></tr>
-            </table>
-            <div class="panel-footer">This is the footer of the panel</div>
-          </div>
-       </div>
-       <hr>
-
-       <!-- Panel with list -->
+    <header>
+      <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
         <div class="container">
-          <div class="panel panel-default panel-primary">
-           <div class="panel-heading"><h3 class="panel-title">This is the heading of the panel</h3></div> 
-            <!--<div class="panel-body">This is the body of the panel</div> -->
-             <li class="list-group-item">Item1</li>
-             <li class="list-group-item">Item2</li>
-             <li class="list-group-item">Item3</li>
-            <div class="panel-footer">This is the footer of the panel</div>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">WiredWiki</a>
           </div>
-       </div>
-      <footer>
-          <div class="container">
-          <hr>
-          <div class="row">
-            <div class="col-xs-2 col-xs-offset-10">
-                <span><small><a href="www.facebook.com">Facebook</a></small></span>
-                <span><small><a href="www.twitter.com">Twitter</a></small></span>
-                <span><small><a href="www.youtube.com">Youtube</a></small></span>
-            </div>
+          <div class="collapse navbar-collapse" id="example">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Link1</a></li>
+              <li><a href="#">Link2</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary navbar-btn">Anchor</a>
+            <form action="" class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="search this out">
+              </div>
+              <button type="button " class="btn btn-primary">Submit</button>
+            </form>
           </div>
-         </div>
-      </footer>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="assets/js/bootstrap.min.js"></script>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Hello World</h1>
+          <h3>List Group and Panel in Bootstrap</h3>
+        </div>
+      </div>
+    </header>
+    <!-- list Group -->
+    <div class="container">
+      <ul class="list-group">
+        <li class="list-group-item"> This is the first content<span class="badge">1</span></li>
+        <li class="list-group-item"> This is the second content<span class="badge">2</span></li>
+        <li class="list-group-item"> This is the third content<span class="badge">3</span></li>
+        <li class="list-group-item"> This is the fourth content<span class="badge">4</span></li>
+      </ul>
+    </div>
+    <hr>
+    <!-- list Group with anchor tags -->
+    <div class="container">
+      <ul class="list-group">
+        <a href="#" class="list-group-item"> This is the first anchor list<span class="badge">1</span></a>
+        <a href="#" class="list-group-item"> This is the second anchor list<span class="badge">1</span></a>
+        <a href="#" class="list-group-item"> This is the third anchor list<span class="badge">1</span></a>
+        <a href="#" class="list-group-item"> This is the fourth anchor list<span class="badge">1</span></a>
+      </ul>
+    </div>
+    <hr>
+    <!-- list Group with anchor tags with highlighting effects -->
+    <div class="container">
+      <ul class="list-group">
+        <a href="#" class="list-group-item list-group-item-success"> This is the first anchor list<span class="badge">1</span></a>
+        <a href="#" class="list-group-item list-group-item-warning"> This is the second anchor list<span class="badge">1</span></a>
+        <a href="#" class="list-group-item list-group-item-info"> This is the third anchor list<span class="badge">1</span></a>
+        <a href="#" class="list-group-item list-group-item-danger"> This is the fourth anchor list<span class="badge">1</span></a>
+      </ul>
+    </div>
+    <hr>
+    <!-- list Group with anchor tags with heading and para-->
+    <div class="container">
+      <ul class="list-group">
+        <a href="#" class="list-group-item list-group-item-success active"> 
+          <h3>active Heading 1</h3>
+          <p>This is active para1 </p>
+        </a>
+        <a href="#" class="list-group-item list-group-item-warning">
+          <h3>Heading 2</h3>
+          <p>This is para 2 </p>
+        </a>
+        <a href="#" class="list-group-item list-group-item-info"> 
+          <h3>Heading 3</h3>
+          <p>This is para 3 </p>
+        </a>
+        <a href="#" class="list-group-item list-group-item-danger">
+          <h3>Heading 4</h3>
+          <p>This is para 4 </p>
+        </a>
+      </ul>
+    </div>
+    <!-- Panel with Table -->
+    <div class="container">
+      <div class="panel panel-default panel-info">
+        <div class="panel-heading"><h3 class="panel-title">This is the heading of the panel</h3></div>
+        <div class="panel-body">This is the body of the panel</div>
+        <table class="table">
+          <tr><th>Heading1</th><th>Heading2</th><th>Heading3</th></tr>
+          <tr><td>content</td><td>content</td><td>content</td></tr>
+          <tr><td>content</td><td>content</td><td>content</td></tr>
+        </table>
+        <div class="panel-footer">This is the footer of the panel</div>
+      </div>
+    </div>
+    <hr>
+    <!-- Panel with list -->
+    <div class="container">
+      <div class="panel panel-default panel-primary">
+        <div class="panel-heading"><h3 class="panel-title">This is the heading of the panel</h3></div>
+          <!--<div class="panel-body">This is the body of the panel</div> -->
+        <li class="list-group-item">Item1</li>
+        <li class="list-group-item">Item2</li>
+        <li class="list-group-item">Item3</li>
+        <div class="panel-footer">This is the footer of the panel</div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+      <hr>
+        <div class="row">
+          <div class="col-xs-2 col-xs-offset-10">
+            <span><small><a href="www.facebook.com">Facebook</a></small></span>
+            <span><small><a href="www.twitter.com">Twitter</a></small></span>
+            <span><small><a href="www.youtube.com">Youtube</a></small></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>

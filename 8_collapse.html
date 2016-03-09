@@ -5,221 +5,181 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap Buttons</title>
+    <title>Bootstrap Collapse</title>
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.min.js"></script>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-
     <style type="text/css">
-    .grey{
+      .grey {
         background-color: #000;
         padding: 20px;
-
-   }
-
+      }
     </style>
   </head>
   <body data-spy="scroll" data-target="#affix-nav" style="position:relative;">
-        <div class="container">
-        <div class="row">
-         <nav =id="affix-nav" class="nav col-md-2">
-           <ul class="nav" data-spy="affix" data-offset-top="40">
-               <li><a href="#tabs-demo">Tabs</a></li>
-               <li><a href="#accordion-demo">Accordion</a></li>
-               <li><a href="#scrollspy-demo">Scroll-spy</a></li>
-               <li><a href="#carousell-demo">Carousel</a></li>
-           </ul>
-         </nav>
-         
-           <div class="col-md-10">
+    <div class="container">
+      <div class="row">
+        <nav =id="affix-nav" class="nav col-md-2">
+          <ul class="nav" data-spy="affix" data-offset-top="40">
+            <li><a href="#tabs-demo">Tabs</a></li>
+            <li><a href="#accordion-demo">Accordion</a></li>
+            <li><a href="#scrollspy-demo">Scroll-spy</a></li>
+            <li><a href="#carousell-demo">Carousel</a></li>
+          </ul>
+        </nav>
+        <div class="col-md-10">
+          <!-- Tabs -->
+          <section id="tabs-demo">
+            <h4 class="page-header">Tabs</h4>
+            <ul class="nav nav-pills nav-justified"><!-- nav-pills nav-stacked nav-justified -->
+              <li class="active"><a href="#Home" data-toggle="tab"> Home</a></li>
+              <li><a href="#About" data-toggle="tab"> About</a></li>
+              <li><a href="#Videos" data-toggle="tab"> Videos</a></li>
+            </ul>
 
-              <!-- Tabs -->
-               <section id="tabs-demo">
-                  <h4 class="page-header">Tabs</h4>  
-                       <ul class="nav nav-pills nav-justified"><!-- nav-pills nav-stacked nav-justified -->
-                           <li class="active"><a href="#Home" data-toggle="tab"> Home</a></li>
-                           <li><a href="#About" data-toggle="tab"> About</a></li>
-                           <li><a href="#Videos" data-toggle="tab"> Videos</a></li>
-                       </ul>
-
-                     <div class="tab-content">
-                         <div class="tab-pane fade in active" id="Home">
-                           <p>Home Tab pressed</p>
-                         </div>
-                         <div class="tab-pane fade" id="About">
-                           <p>About Tab pressed</p>
-                         </div>
-                         <div class="tab-pane fade" id="Videos">
-                           <p>Videos Tab pressed</p>
-                         </div>
-                     </div>
-               </section> <!--End of tabs -->
-               <hr>
- 
-                <!-- Accordion --> 
-               <h4 id="accordion-demo">Accordion</h4>
-               <div class="panel-group" id="accordion">
-                  <!-- first panel-->
-                  <div class="panel panel-success">
-
-                    <div class="panel-heading">
-                       <h4 class="panel-title">
-                         <a href="#collapseone" data-toggle="collapse" data-parent="accordion"> Collapsible Panel 1</a>
-                       </h4>
-                    </div>
-                    
-                    <div id="collapseone" class="panel-collapse collapse ">
-                       <div class="panel-body">
-                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                       </div>
-                    </div>
-
-                  </div>
-                  <!-- Second panel -->
-
-                   <div class="panel panel-warning">
-
-                    <div class="panel-heading">
-                       <h4 class="panel-title">
-                         <a href="#collapsetwo" data-toggle="collapse" data-parent="accordion"> Collapsible Panel 2</a>
-                       </h4>
-                    </div>
-                    
-                    <div id="collapsetwo" class="panel-collapse collapse">
-                       <div class="panel-body">
-                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                       </div>
-                    </div>
-
-                  </div>
-     
-                  <!-- Third panel -->
-                   <div class="panel panel-info">
-
-                    <div class="panel-heading">
-                       <h4 class="panel-title">
-                         <a href="#collapsethree" data-toggle="collapse" data-parent="accordion"> Collapsible Panel 3</a>
-                       </h4>
-                    </div>
-                    
-                    <div id="collapsethree" class="panel-collapse collapse">
-                       <div class="panel-body">
-                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                       </div>
-                    </div>
-
-                  </div> <!--End of third panel -->
-
-               </div> <!--End of accordion -->
-               <hr>
-               
-               <!-- Scroll-spy -->
-               <h4 id="scrollspy-demo">Scroll-spy</h4>
-               <div style="position:relative;">
-                  <nav class="navbar navbar-default navbar-static" role="navigation" id="navbar-spy">
-                      <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                          <li><a href="#first">First</a></li>
-                          <li><a href="#second">Second</a></li>
-                          <li><a href="#third">Third</a></li>
-                          <li><a href="#fourth">Fourth</a></li>
-                        </ul>  
-                      </div>
-                      </div>
-                  </nav>
-
-                  <div data-target="#navbar-spy" data-spy="scroll" style="height:150px; overflow-y:scroll; position:relative">
-                     <p id="first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                     <p id="second">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                     <p id="third">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                     <p id="fourth">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                  </div>
-               </div><!--End of scroll-spy -->
-               <hr>
-
-               <!-- carousel -->
-               <h4 id="carousell-demo">Carousel</h4>   
-                <!-- Image list -->
-               <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
-                <ol class="carousel-indicators">
-                   <li data-target="#screen-carousel" data-slide-to="0" class="active "> </li>
-                   <li data-target="#screen-carousel" data-slide-to="1"> </li>
-                   <li data-target="#screen-carousel" data-slide-to="2"> </li>
-                   <li data-target="#screen-carousel" data-slide-to="3"> </li>
-                </ol>
-
-                    <!-- wrapper for slides -->
-                 <div class="carousel-inner">
-
-                    <div class="item active">
-                      <img src="assets/images/mountain.jpg" alt="Mountain"  width="900" />
-                      <div class="carousel-caption">
-                        <h3>Mountain</h3>
-                        <p>This picture is a reflection of God's Beauty</p>
-                      </div>
-                    </div>
-
-
-                    <div class="item">
-                      <img src="assets/images/sunshine.jpg" alt="Sunshine"  width="900"   />
-                      <div class="carousel-caption">
-                        <h3>Sunshine</h3>
-                        <p>This picture is a reflection of God's Beauty</p>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <img src="assets/images/grass.jpg" alt="Grass"  width="900"  />
-                      <div class="carousel-caption">
-                        <h3>Grass</h3>
-                        <p>This picture is a reflection of God's Beauty</p>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <img src="assets/images/lake.jpg" alt="Lake" width="900"  />
-                      <div class="carousel-caption">
-                        <h3>Lake</h3>
-                        <p>This picture is a reflection of God's Beauty</p>
-                      </div>
-                    </div><!--end carousel inner -->
-
-                    <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span></a>
-                    <a href="#screenshot-carousel" class="right carousel-control" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-               </div><!--end carousel inner-->
-            
-               </div> <!-- End carousel -->
-
-             </div>
-           </div>
-        </div>
-     
-
-
-      <footer>
-          <div class="container">
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="Home">
+                <p>Home Tab pressed</p>
+              </div>
+              <div class="tab-pane fade" id="About">
+                <p>About Tab pressed</p>
+              </div>
+              <div class="tab-pane fade" id="Videos">
+                <p>Videos Tab pressed</p>
+              </div>
+            </div>
+          </section> <!--End of tabs -->
           <hr>
-          <div class="row">
-            <div class="col-xs-2 col-xs-offset-10">
-                <span><small><a href="www.facebook.com">Facebook</a></small></span>
-                <span><small><a href="www.twitter.com">Twitter</a></small></span>
-                <span><small><a href="www.youtube.com">Youtube</a></small></span>
+          <!-- Accordion --> 
+          <h4 id="accordion-demo">Accordion</h4>
+          <div class="panel-group" id="accordion">
+          <!-- first panel-->
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#collapseone" data-toggle="collapse" data-parent="accordion"> Collapsible Panel 1</a>
+                </h4>
+              </div>
+              <div id="collapseone" class="panel-collapse collapse ">
+                <div class="panel-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+              </div>
+            </div>
+              <!-- Second panel -->
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#collapsetwo" data-toggle="collapse" data-parent="accordion"> Collapsible Panel 2</a>
+                </h4>
+              </div>
+              <div id="collapsetwo" class="panel-collapse collapse">
+                <div class="panel-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+              </div>
+            </div>
+            <!-- Third panel -->
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#collapsethree" data-toggle="collapse" data-parent="accordion"> Collapsible Panel 3</a>
+                </h4>
+              </div>
+              <div id="collapsethree" class="panel-collapse collapse">
+                <div class="panel-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+              </div>
+            </div> <!--End of third panel -->
+          </div> <!--End of accordion -->
+          <hr>
+          <!-- Scroll-spy -->
+          <h4 id="scrollspy-demo">Scroll-spy</h4>
+          <div style="position:relative;">
+            <nav class="navbar navbar-default navbar-static" role="navigation" id="navbar-spy">
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="#first">First</a></li>
+                  <li><a href="#second">Second</a></li>
+                  <li><a href="#third">Third</a></li>
+                  <li><a href="#fourth">Fourth</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div data-target="#navbar-spy" data-spy="scroll" style="height:150px; overflow-y:scroll; position:relative">
+            <p id="first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p id="second">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p id="third">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p id="fourth">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div><!--End of scroll-spy -->
+      <hr>
+      <!-- carousel -->
+      <h4 id="carousell-demo">Carousel</h4>
+      <!-- Image list -->
+      <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#screen-carousel" data-slide-to="0" class="active "> </li>
+          <li data-target="#screen-carousel" data-slide-to="1"> </li>
+          <li data-target="#screen-carousel" data-slide-to="2"> </li>
+          <li data-target="#screen-carousel" data-slide-to="3"> </li>
+        </ol>
+        <!-- wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="assets/images/mountain.jpg" alt="Mountain"  width="900" />
+            <div class="carousel-caption">
+              <h3>Mountain</h3>
+              <p>This picture is a reflection of God's Beauty</p>
             </div>
           </div>
-         </div>
-      </footer>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="assets/js/bootstrap.min.js"></script>
+          <div class="item">
+            <img src="assets/images/sunshine.jpg" alt="Sunshine"  width="900"   />
+            <div class="carousel-caption">
+              <h3>Sunshine</h3>
+              <p>This picture is a reflection of God's Beauty</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/grass.jpg" alt="Grass"  width="900"  />
+            <div class="carousel-caption">
+              <h3>Grass</h3>
+              <p>This picture is a reflection of God's Beauty</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/lake.jpg" alt="Lake" width="900"  />
+            <div class="carousel-caption">
+              <h3>Lake</h3>
+              <p>This picture is a reflection of God's Beauty</p>
+            </div>
+          </div><!--end carousel inner -->
+          <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a href="#screenshot-carousel" class="right carousel-control" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div><!--end carousel inner-->
+      </div> <!-- End carousel -->
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-xs-2 col-xs-offset-10">
+          <span><small><a href="www.facebook.com">Facebook</a></small></span>
+          <span><small><a href="www.twitter.com">Twitter</a></small></span>
+          <span><small><a href="www.youtube.com">Youtube</a></small></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
